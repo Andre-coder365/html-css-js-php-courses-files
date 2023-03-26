@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Modal em CSS</title>
+    <style type="text/css">
+        p#sem_pseudo_classe {
+            font-size: 12px;
+            color: black;
+        }
+
+        p#sem_pseudo_classe span.primeira_letra_fonte_maior {
+            font-size: 26px;
+            color: blue;
+        }
+
+        p#com_pseudo_classe {
+            font-size: 12px;
+            color: black;
+        }
+
+        p#com_pseudo_classe::first-letter {
+            font-size: 26px;
+            color: red;
+        }
+
+     
+
+    </style>
+</head>
+<body>
+    <p id="sem_pseudo_classe">
+        <span class="primeira_letra_fonte_maior">T</span>exto do parágrafo sem pesudo classe.
+    </p>
+
+    <p id="com_pseudo_classe">
+        Texto do parágrafo com pesudo classe.
+    </p>
+
+   
+    
+</body>
+</html>

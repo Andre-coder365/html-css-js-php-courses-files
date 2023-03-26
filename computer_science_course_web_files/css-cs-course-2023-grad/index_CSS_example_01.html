@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Sintaxe 1 do CSS  -->
+    <style type="text/css">
+
+
+        /* Pesquisar como usar o @font-face no youtube
+        @font-face {
+	    font-family: Wingdings;
+        src: (\\Windows\Fonts) (wingding.ttf);
+        } */
+
+
+
+        #texto_apresentacao {
+            font-size:16px;
+            border: 1px solid blueviolet ;
+        }
+
+        .texto_descricao {
+            font-size:12px;           
+        }
+
+        .texto_vermelho {
+            color:red;         
+        }
+
+        .teste_01 {
+
+            font-family: Wingdings;
+
+            border: 3px solid red;
+            height: 300px;
+            width: 550px;
+        }
+
+    </style>
+
+    <!-- Sintaxe 2 do CSS - comentada  -->
+    <!-- <style type="text/css">
+
+        p#texto_apresentacao {
+            font-size:16px;           
+        }
+
+        p.texto_descricao {
+            font-size:12px;           
+        }
+
+        .texto_vermelho {
+            color:red;         
+        }
+
+        
+
+    </style> -->
+
+</head>
+
+<body>
+
+    <h1 class="texto_vermelho">Título Principal</h1>
+    <p id="texto_apresentacao">
+        Texto do parágrafo com atributo de identificação
+    </p>
+    <h2>Primeiro Subtítulo</h2>
+    <p class="texto_descricao texto_vermelho">
+        Texto do parágrafo com atributo de classe
+    </p>
+    <h2>Segundo Subtítulo</h2>
+    <p class="texto_descricao">
+        Texto do parágrafo com atributo de classe
+    </p>
+
+    <div class="teste_01">
+
+        <P>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>Cras urna est, congue vel fermentum sed, porttitor quis justo. Aliquam erat volutpat. Quisque volutpat mauris at.
+        </p>
+
+    </div>
+    
+</body>
+</html>
