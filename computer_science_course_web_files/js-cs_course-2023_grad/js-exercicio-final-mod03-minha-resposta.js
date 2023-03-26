@@ -15,7 +15,7 @@ var num2 = prompt("Insira o segundo número:");
 numInformados.push(num1);
 numInformados.push(num2);
 
-if ((!(numInformados[0] >= 0)) || (!(numInformados[0] % 2 == 0)) || (!(numInformados[1] >= 0)) || (!(numInformados[1] % 2 == 0)) ) {
+if ((!(numInformados[0] >= 0)) || (!(numInformados[1] >= 0))) {
     console.log("A ou B (ou ambos) não são inteiros positivos, reinicie o programa e insira novamente os números")
 } else {
     console.log("A e B são inteiros positivos, tudo ok");
