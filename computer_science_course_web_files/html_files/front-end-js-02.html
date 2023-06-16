@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, title</title>
+    <script>
+        function greet()
+        {
+            let name = document.querySelector('#name').value;
+            alert('hello, ' + name)
+        }
+        function listen() {
+            document.querySelector('form').addEventListener('submit', greet)
+        }
+
+        document.addEventListener('DOMContentLoaded', listen)
+
+        
+    </script>
+</head>
+<body>
+    <form onsubmit="greet(); return false">
+    <input id="name" autocomplete="off" autofocus placeholder="Qual seu nome?" type="text">
+    <input type="submit" value="Greet Me">
+</form>
+    
+</body>
+</html>
